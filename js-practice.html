@@ -38,9 +38,67 @@
     console.log(name);
 
     //Strings on my own
+    console.log("Strings on my own");
 
     let greeting = 'My name is' + " " + name;
     console.log(greeting);
+
+    // Starting functions
+    console.log("Using functions");
+
+    function makeSquare(theNumb) {
+      let squared = theNumb * theNumb;
+      return squared;
+    }
+
+    let try01 = makeSquare(3);
+    console.log(try01);
+
+    console.log(makeSquare(5));
+
+    // Functions on my own
+    console.log("Functions on my Own");
+
+    function makeName(firstName, middleName, lastName) {
+    let name = firstName + " " + middleName + " " + lastName;
+    return name;
+    }
+
+    console.log(makeName("Emma", "Kathleen", "Bittner"));
+    console.log(makeName("Harry", "Edward", "Styles"));
+    console.log(makeName("Robert", "\"Beto\"", "O\'Rourke"));
+
+    // Just a log to show in our Console
+    console.log("Making better names");
+    
+    // A better name function to fix middle initials
+    function makeBetterName(firstName, middleName, lastName) {
+      if (middleName.length === 1){
+        middleName = middleName + ".";
+      }
+      let fullName = firstName + " " + middleName + " " + lastName;
+      return fullName;
+    }
+    console.log(makeBetterName("Joan", "Marie", "Larkin"));
+    console.log(makeBetterName("John", "F", "Kennedy"));
+    console.log(makeBetterName("Emma", "K", "Bittner"));
+    console.log(makeBetterName("Niall", "J", "Horan"));
+
+    // Print who won in soccer match
+    console.log("scoreCompare function");
+    function scoreCompare(home, away) {
+      if (home > away) {
+        return "Home team wins!";
+      } else if (home < away) {
+        return "Away team wins :(";
+      } else {
+        return "It's a tie!"
+      }
+    }
+
+  console.log(scoreCompare(5,3));
+  console.log(scoreCompare(3,5));
+  console.log(scoreCompare(5,5));
   </script>
 </body>
 </html>
